@@ -6,7 +6,7 @@ More information: https://github.com/google/mtail
 To build the snap, run `snapcraft` in this directory on Ubuntu 18.04 or later, and install with `sudo snap install mtail*.snap`
 
 ## Snap usage
-`service snap.mtail.mtail` # copies the config file from the source if needed, and runs mtail
+`service snap.mtail.mtail start` # copies the config file from the source if needed, and runs mtail
 
 ## Daemon arguments:
-`$SNAP_DATA/daemon_arguments
+`$SNAP_DATA/daemon_arguments`
