@@ -1,0 +1,7 @@
+#!/bin/sh
+
+test -e $SNAP_DATA/daemon_arguments || cp $SNAP/etc/daemon_arguments.example $SNAP_DATA/daemon_arguments
+test -d $SNAP_DATA/progs || mkdir $SNAP_DATA/progs
+
+. $SNAP_DATA/daemon_arguments
+$SNAP/bin/mtail -logtostderr -progs $SNAP_DATA/progs $ARGS
